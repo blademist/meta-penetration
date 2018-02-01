@@ -8,16 +8,16 @@ This layer depends on:
 
 	URI: git://git.openembedded.org/openembedded-core
 	layers: meta
-	branch: master
+	branch: jethro
 	revision: HEAD
 
 	URI: git://git.yoctoproject.org/meta-yocto
 	layers: meta-yocto meta-yocto-bsp
-	branch: master
+	branch: jethro
 	revision: HEAD
 
 	URI: git://git.openembedded.org/meta-openembedded
 	layers: meta-oe meta-python meta-networking
-	branch: master
+	branch: jethro
 	revision: HEAD
 
