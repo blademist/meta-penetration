@@ -1,0 +1,24 @@
+From 90a448847fbd50c9f65204dece3849bc766daf31 Mon Sep 17 00:00:00 2001
+From: Zhao Yi <twilightog@gmail.com>
+Date: Fri, 2 Feb 2018 13:25:19 +0800
+Subject: [PATCH 2/2] Makefile.inc.in: change man group to root
+
+Signed-off-by: Zhao Yi <twilightog@gmail.com>
+---
+ Makefile.inc.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile.inc.in b/Makefile.inc.in
+index bc55970..34e32c0 100644
+--- a/Makefile.inc.in
++++ b/Makefile.inc.in
+@@ -1,5 +1,5 @@
+ INSTGRP 	?= "@instgrp@"
+-MANGRP 		?= "@mangrp@"
++MANGRP 		?= "@instgrp@"
+ INSTUSR 	?= "root"
+ 
+ ZAURUS 		= @zaurus@
+-- 
+2.7.4
+
