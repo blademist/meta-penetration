@@ -1,5 +1,8 @@
 meta-penetration
 ================================
+OpenEmbedded/Yocto Project meta layer for penetration tools
+
+Only test on beagleboneblack
 
 Dependencies
 -------------------------
