@@ -7,8 +7,10 @@ SRC_URI = "http://dl.aircrack-ng.org/${BPN}-${PV}.tar.gz \
            file://fix_libsql.patch \
           "
 
-SRC_URI[md5sum] = "3f4096808c916baa8872a5ad138a9c35"
-SRC_URI[sha256sum] = "8e595ccab9fe90fc7c770634ad13e30da2d7fef21497b34d56d7014b991a4585"
+SRC_URI_append_arm = " file://common_cfg_arm.patch"
+
+SRC_URI[md5sum] = "3bbc7d5035a98ec01e78774d05c3fcce"
+SRC_URI[sha256sum] = "d93ac16aade5b4d37ab8cdf6ce4b855835096ccf83deb65ffdeff6d666eaff36"
 
 inherit pkgconfig
 
