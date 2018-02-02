@@ -1,0 +1,44 @@
+From 16234bbe4369a96612dd3b4975e0e189a086936f Mon Sep 17 00:00:00 2001
+From: Zhao Yi <twilightog@gmail.com>
+Date: Fri, 2 Feb 2018 11:19:12 +0800
+Subject: [PATCH] Makefile: fix GNU_HASH QA error
+
+Add LDFLAGS variable to Makefile, make sure the extra linker flags can be passed.
+
+Signed-off-by: Zhao Yi <twilightog@gmail.com>
+---
+ Makefile | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 08529b2..b532b85 100644
+--- a/Makefile
++++ b/Makefile
+@@ -21,19 +21,19 @@ all: $(PROGOBJ) $(PROG)
+ 
+ cowpatty: common.h md5.c md5.h sha1.h cowpatty.c cowpatty.h sha1.c \
+             sha1.h utils.c utils.h
+-	$(CC) $(CFLAGS) cowpatty.c -o cowpatty utils.o md5.o sha1.o $(LDLIBS)
++	$(CC) $(CFLAGS) $(LDFLAGS) cowpatty.c -o cowpatty utils.o md5.o sha1.o $(LDLIBS)
+ 
+ genpmk: genpmk.c cowpatty.h utils.h sha1.h common.h
+-	$(CC) $(CFLAGS) genpmk.c -o genpmk utils.o sha1.o $(LDLIBS)
++	$(CC) $(CFLAGS) $(LDFLAGS) genpmk.c -o genpmk utils.o sha1.o $(LDLIBS)
+ 
+ utils: utils.c utils.h
+-	$(CC) $(CFLAGS) utils.c -c
++	$(CC) $(CFLAGS) $(LDFLAGS) utils.c -c
+ 
+ md5: md5.c md5.h
+-	$(CC) $(CFLAGS) md5.c -c
++	$(CC) $(CFLAGS) $(LDFLAGS) md5.c -c
+ 
+ sha1: sha1.c sha1.h
+-	$(CC) $(CFLAGS) sha1.c -c
++	$(CC) $(CFLAGS) $(LDFLAGS) sha1.c -c
+ 
+ clean:
+ 	@rm $(PROGOBJ) $(PROG)
+-- 
+2.7.4
+
