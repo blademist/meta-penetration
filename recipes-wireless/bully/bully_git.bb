@@ -9,7 +9,7 @@ PV = "1.1+git${SRCPV}"
 
 S = "${WORKDIR}/git/src"
 
-DEPENDS = "libpcap openssl"
+DEPENDS = "libpcap"
 RDEPENDS_${PN} = "aircrack-ng"
 
 PARALLEL_MAKE = ""
