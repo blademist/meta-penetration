@@ -1,0 +1,29 @@
+From 70457defaca082d3796c15702cf47014fab67e7a Mon Sep 17 00:00:00 2001
+From: Zhao Yi <twilightog@gmail.com>
+Date: Fri, 2 Feb 2018 13:39:54 +0800
+Subject: [PATCH] Makefile: fix GNU_HASH QA error
+
+Add LDFLAGS variable to Makefile, make sure the extra linker flags can
+be passed.
+
+Signed-off-by: Zhao Yi <twilightog@gmail.com>
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 20182a2..634ec81 100644
+--- a/Makefile
++++ b/Makefile
+@@ -19,7 +19,7 @@ $(LIBOSD):
+ 	$(MAKE) -C $(OSD)
+ 
+ mdk3: mdk3.c $(OSD)/libosdep.a
+-	$(CC) $(CFLAGS) $(LINKFLAGS) $^ -o $@ $(LIBS)
++	$(CC) $(CFLAGS) $(LINKFLAGS) $(LDFLAGS) $^ -o $@ $(LIBS)
+ 
+ install: mdk3
+ 	$(MAKE) -C $(OSD) install
+-- 
+2.7.4
+
