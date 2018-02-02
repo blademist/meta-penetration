@@ -12,12 +12,17 @@ This layer depends on:
 	revision: HEAD
 
 	URI: git://git.yoctoproject.org/meta-yocto
-	layers: meta-yocto meta-yocto-bsp
+	layers: meta-poky meta-yocto-bsp
 	branch: master
 	revision: HEAD
 
 	URI: git://git.openembedded.org/meta-openembedded
 	layers: meta-oe meta-python meta-networking
+	branch: master
+	revision: HEAD
+
+	URI: git://git.yoctoproject.org/meta-qt4
+	layers: meta-qt4
 	branch: master
 	revision: HEAD
 
