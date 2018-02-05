@@ -1,0 +1,35 @@
+From eafe775ceb3d3f34c562876612696ec426275e05 Mon Sep 17 00:00:00 2001
+From: Zhao Yi <twilightog@gmail.com>
+Date: Mon, 5 Feb 2018 13:03:27 +0800
+Subject: [PATCH] Makefile.in: set default python path
+
+Signed-off-by: Zhao Yi <twilightog@gmail.com>
+---
+ Makefile.in | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Makefile.in b/Makefile.in
+index 646e716..078f574 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -341,7 +341,7 @@ build-zenmap: $(ZENMAPDIR)/setup.py $(ZENMAPDIR)/zenmapCore/Version.py
+ # When DESTDIR is defined, assume we're building an executable
+ # distribution rather than a local installation and force a generic
+ # Python interpreter location.
+-	cd $(ZENMAPDIR) && $(PYTHON) setup.py build $(if $(DESTDIR),--executable "$(DEFAULT_PYTHON_PATH)")
++	cd $(ZENMAPDIR) && $(PYTHON) setup.py build --executable "$(DEFAULT_PYTHON_PATH)"
+ 
+ install-zenmap: $(ZENMAPDIR)/setup.py
+ 	$(INSTALL) -d $(DESTDIR)$(bindir) $(DESTDIR)$(mandir)/man1
+@@ -356,7 +356,7 @@ install-zenmap: $(ZENMAPDIR)/setup.py
+ 	ln -sf zenmap $(DESTDIR)$(bindir)/xnmap
+ 
+ build-ndiff:
+-	cd $(NDIFFDIR) && $(PYTHON) setup.py build $(if $(DESTDIR),--executable "$(DEFAULT_PYTHON_PATH)")
++	cd $(NDIFFDIR) && $(PYTHON) setup.py build --executable "$(DEFAULT_PYTHON_PATH)"
+ 
+ build-nping: $(NPINGDIR)/Makefile build-nbase build-nsock build-netutil $(NPINGDIR)/nping.h @DNET_BUILD@ @PCAP_BUILD@
+ 	@cd $(NPINGDIR) && $(MAKE)
+-- 
+2.7.4
+
