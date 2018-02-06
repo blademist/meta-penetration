@@ -17,7 +17,7 @@ EXTRA_AUTORECONF += "--exclude=autoheader,automake"
 
 PACKAGECONFIG ??= "lua ndiff nping ncat"
 PACKAGECONFIG[lua] = "--with-liblua=included, --without-liblua, , "
-PACKAGECONFIG[ndiff] = "--with-ndiff, --without-ndiff, , python python-difflib"
+PACKAGECONFIG[ndiff] = "--with-ndiff, --without-ndiff, , python python-difflib python-xml"
 PACKAGECONFIG[nping] = "--with-nping, --without-nping, , "
 PACKAGECONFIG[ncat] = "--with-ncat, --without-ncat, , "
 PACKAGECONFIG[zenmap] = "--with-zenmap, --without-zenmap, , python python-unittest python-doctest"
