@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cd /usr/share/wifite2/ && python Wifite.py "$@"
