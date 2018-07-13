@@ -8,7 +8,7 @@ SRC_URI = "git://github.com/savio-code/fern-wifi-cracker.git \
            file://fern-wifi-cracker \
            "
 
-PV = "2.3+git${SRCPV}"
+PV = "2.6+git${SRCPV}"
 
 inherit allarch
 
