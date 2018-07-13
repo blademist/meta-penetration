@@ -1,5 +1,5 @@
 SUMMARY = "A 802.11 wireless network security testing tool"
-HOMEPAGE = "http://homepages.tu-darmstadt.de/~p_larbig/wlan/"
+HOMEPAGE = "http://aspj.aircrack-ng.org/"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=751419260aa954499f7abaabaa882bbe"
 
