@@ -10,9 +10,7 @@ PV = "1.1+git${SRCPV}"
 S = "${WORKDIR}/git/src"
 
 DEPENDS = "libpcap"
-RDEPENDS_${PN} = "aircrack-ng"
-
-PARALLEL_MAKE = ""
+RDEPENDS_${PN} = "pixiewps aircrack-ng"
 
 EXTRA_OEMAKE = "prefix=${prefix}"
 
