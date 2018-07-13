@@ -15,7 +15,7 @@ SRC_URI[sha256sum] = "d93ac16aade5b4d37ab8cdf6ce4b855835096ccf83deb65ffdeff6d666
 inherit pkgconfig
 
 DEPENDS = "libnl openssl libpcap sqlite3 libpcre"
-RDEPENDS_${PN} = "bash coreutils procps ethtool wireless-tools"
+RDEPENDS_${PN} = "bash coreutils procps ethtool iw"
 
 PARALLEL_MAKE = ""
 
