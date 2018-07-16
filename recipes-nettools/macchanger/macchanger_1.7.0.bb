@@ -7,7 +7,7 @@ SECTION = "net"
 
 SRCREV = "f4f66e1eba1f5154a365d3323088050d0f75a168"
 SRC_URI = "git://github.com/alobbs/macchanger.git"
-PV = "1.6+git${SRCPV}"
+PV = "1.7.0"
 
 S = "${WORKDIR}/git"
 
