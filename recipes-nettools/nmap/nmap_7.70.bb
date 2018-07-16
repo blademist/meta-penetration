@@ -6,8 +6,8 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=892ecc57ee9a91d049fc49f0914269a0"
 SRC_URI = "https://nmap.org/dist/${BPN}-${PV}.tar.bz2 \
            file://0001-Makefile.in-set-default-python-path.patch \
           "
-SRC_URI[md5sum] = "7fa4edc592184c7addc14f5acb3fe6f7"
-SRC_URI[sha256sum] = "cf1fcd2643ba2ef52f47acb3c18e52fa12a4ae4b722804da0e54560704627705"
+SRC_URI[md5sum] = "84eb6fbe788e0d4918c2b1e39421bf79"
+SRC_URI[sha256sum] = "847b068955f792f4cc247593aca6dc3dc4aae12976169873247488de147a6e18"
 
 DEPENDS = "openssl libpcap libpcre"
 
@@ -15,7 +15,7 @@ inherit autotools-brokensep gettext python-dir
 
 EXTRA_AUTORECONF += "--exclude=autoheader,automake"
 
-PACKAGECONFIG ??= "lua ndiff nping ncat"
+PACKAGECONFIG ??= "lua nping ncat"
 PACKAGECONFIG[lua] = "--with-liblua=included, --without-liblua, , "
 PACKAGECONFIG[ndiff] = "--with-ndiff, --without-ndiff, , python python-difflib python-xml"
 PACKAGECONFIG[nping] = "--with-nping, --without-nping, , "
