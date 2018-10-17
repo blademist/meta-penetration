@@ -59,7 +59,7 @@ RDEPENDS_packagegroup-wireless-pentools = "\
     pixiewps \
     reaver \
     bully \
-    wifite \
+    wifite2 \
     mdk3 \
     kismet \
     fern-wifi-cracker \
