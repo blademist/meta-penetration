@@ -1,19 +1,19 @@
 SUMMARY = "A complete re-write of wifite, a Python script for auditing wireless networks"
-HOMEPAGE = "https://github.com/derv82/wifite"
+HOMEPAGE = "https://github.com/derv82/wifite2"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=a23a74b3f4caf9616230789d94217acb"
 
-SRCREV = "f24ec55999e78a6f1de543d8d75a8cd65a4676cf"
+SRCREV = "e190794149f488f9c4a2801962e5165b29e71b5e"
 SRC_URI = "git://github.com/derv82/wifite2.git \
            file://wifite2 \
            "
-PV = "2.1.6+git${SRCPV}"
+PV = "2.2.5+git${SRCPV}"
 
 inherit allarch
 
 S = "${WORKDIR}/git/"
 
-RDEPENDS_${PN} = "python python-subprocess python-argparse iw aircrack-ng cowpatty reaver"
+RDEPENDS_${PN} = "python python-subprocess python-argparse iw wireless-tools aircrack-ng cowpatty reaver"
 
 do_install () {
     mkdir -p ${D}${bindir}
