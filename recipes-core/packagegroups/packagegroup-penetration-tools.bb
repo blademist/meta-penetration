@@ -47,6 +47,8 @@ RDEPENDS_packagegroup-net-tools = "\
     tcpdump \
     netcat \
     wireshark \
+    wireshark-gtk \
+    tshark \
     nmap \
     macchanger \
     "
