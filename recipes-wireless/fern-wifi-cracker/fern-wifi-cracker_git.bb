@@ -3,18 +3,18 @@ HOMEPAGE = "https://github.com/savio-code/fern-wifi-cracker"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://core/wps.py;beginline=13;endline=26;md5=a0830c84aa087dd904e22395e93d16c2"
 
-SRCREV = "d25e58e0f38dcb68724f4476f23992c0017cc255"
+SRCREV = "df0ef358c3a949279443111d02108c5c9aa3b190"
 SRC_URI = "git://github.com/savio-code/fern-wifi-cracker.git \
            file://fern-wifi-cracker \
            "
 
-PV = "2.6+git${SRCPV}"
+PV = "2.7+git${SRCPV}"
 
 inherit allarch
 
 S = "${WORKDIR}/git/Fern-Wifi-Cracker"
 
-RDEPENDS_${PN} = "python python-pyqt python-sqlite3 python-json python-netclient python-scapy libicui18n xterm subversion macchanger aircrack-ng reaver"
+RDEPENDS_${PN} = "python python-pyqt5 python-sqlite3 python-json python-netclient python-scapy libicui18n xterm subversion macchanger aircrack-ng reaver"
 
 do_install () {
     mkdir -p ${D}${bindir}
