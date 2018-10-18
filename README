@@ -24,8 +24,8 @@ This layer depends on:
 	branch: master
 	revision: HEAD
 
-	URI: git://git.yoctoproject.org/meta-qt4
-	layers: meta-qt4
+	URI: git://github.com/meta-qt5/meta-qt5.git
+	layers: meta-qt5
 	branch: master
 	revision: HEAD
 
