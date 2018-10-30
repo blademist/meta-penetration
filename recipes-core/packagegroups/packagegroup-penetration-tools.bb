@@ -10,14 +10,12 @@ PACKAGES = "\
     packagegroup-base-tools \
     packagegroup-net-tools \
     packagegroup-wireless-pentools \
-    packagegroup-extra-packages \
     "
 
 RDEPENDS_packagegroup-penetration-tools = "\
     packagegroup-base-tools \
     packagegroup-net-tools \
     packagegroup-wireless-pentools \
-    packagegroup-extra-packages \
     "
 
 SUMMARY_packagegroup-base-tools = "Base tools"
@@ -71,4 +69,3 @@ RDEPENDS_packagegroup-extra-packages = "\
     linux-firmware \
     kernel-module-carl9170 \
     "
-
