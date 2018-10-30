@@ -14,11 +14,6 @@ This layer depends on:
 	branch: master
 	revision: HEAD
 
-	URI: git://git.yoctoproject.org/meta-yocto
-	layers: meta-poky meta-yocto-bsp
-	branch: master
-	revision: HEAD
-
 	URI: git://git.openembedded.org/meta-openembedded
 	layers: meta-oe meta-python meta-networking
 	branch: master
@@ -29,3 +24,14 @@ This layer depends on:
 	branch: master
 	revision: HEAD
 
+    1. Using meta-yocto-bsp:
+	URI: git://git.yoctoproject.org/meta-yocto
+	layers: meta-poky meta-yocto-bsp
+	branch: master
+	revision: HEAD
+
+    2. Using meta-ti:
+	URI: git://git.yoctoproject.org/meta-ti
+	layers: meta-ti
+	branch: master
+	revision: HEAD
