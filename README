@@ -24,6 +24,7 @@ This layer depends on:
 	branch: master
 	revision: HEAD
 
+	Beagleboneblack:
     1. Using meta-yocto-bsp:
 	URI: git://git.yoctoproject.org/meta-yocto
 	layers: meta-poky meta-yocto-bsp
