@@ -11,28 +11,28 @@ This layer depends on:
 
 	URI: git://git.openembedded.org/openembedded-core
 	layers: meta
-	branch: master
+	branch: thud
 	revision: HEAD
 
 	URI: git://git.openembedded.org/meta-openembedded
 	layers: meta-oe meta-python meta-networking
-	branch: master
+	branch: thud
 	revision: HEAD
 
 	URI: git://github.com/meta-qt5/meta-qt5.git
 	layers: meta-qt5
-	branch: master
+	branch: thud
 	revision: HEAD
 
 	Beagleboneblack:
     1. Using meta-yocto-bsp:
 	URI: git://git.yoctoproject.org/meta-yocto
 	layers: meta-poky meta-yocto-bsp
-	branch: master
+	branch: thud
 	revision: HEAD
 
     2. Using meta-ti:
 	URI: git://git.yoctoproject.org/meta-ti
 	layers: meta-ti
-	branch: master
+	branch: thud
 	revision: HEAD
