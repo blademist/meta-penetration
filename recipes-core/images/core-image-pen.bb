@@ -10,6 +10,6 @@ IMAGE_INSTALL += "\
     packagegroup-penetration-tools \
     "
 
-inherit distro_features_check
+inherit features_check
 REQUIRED_DISTRO_FEATURES = "wifi"
 
