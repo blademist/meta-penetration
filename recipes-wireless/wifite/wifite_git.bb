@@ -13,7 +13,7 @@ inherit allarch
 
 S = "${WORKDIR}/git/"
 
-RDEPENDS_${PN} = "python python-subprocess python-argparse iw wireless-tools aircrack-ng cowpatty reaver"
+RDEPENDS_${PN} = "python3-core iw wireless-tools aircrack-ng cowpatty reaver"
 
 do_install () {
     mkdir -p ${D}${bindir}
