@@ -3,7 +3,7 @@ HOMEPAGE = "https://github.com/wiire/pixiewps"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://LICENSE.md;md5=dedcfd78ca4eab2efdf6a4c5be1ab762"
 
-SRCREV = "9e5bdc6c86c8487b2a6107d5ab3559ed5c738c59"
+SRCREV = "a6b3fa514c0c9a6ad5dc931040218451c64ce150"
 SRC_URI = "git://github.com/wiire/pixiewps.git"
 PV = "1.4.2+git${SRCPV}"
 
