@@ -1,0 +1,72 @@
+From 743048b8e5af8d2869a2d00cf4fec7d832eb4fcd Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Fri, 3 Apr 2020 16:55:12 +0800
+Subject: [PATCH] python-tools: Fix installation for python site packages
+
+Pass the correct options to setup.py
+
+Upstream-Status: Inappropriate [embedded specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ capture_freaklabs_zigbee/Makefile.in | 2 +-
+ capture_sdr_rtl433/Makefile.in       | 2 +-
+ capture_sdr_rtladsb/Makefile.in      | 2 +-
+ capture_sdr_rtlamr/Makefile.in       | 2 +-
+ 4 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/capture_freaklabs_zigbee/Makefile.in b/capture_freaklabs_zigbee/Makefile.in
+index 05c6d4a..b80a0a7 100644
+--- a/capture_freaklabs_zigbee/Makefile.in
++++ b/capture_freaklabs_zigbee/Makefile.in
+@@ -10,7 +10,7 @@ all:
+ 	$(PYTHON) ./setup.py bdist
+ 
+ install:
+-	$(PYTHON) ./setup.py install
++	$(PYTHON) ./setup.py install --prefix=$(prefix) --root=$(DESTDIR) --no-compile
+ 	# $(INSTALL) -o $(INSTUSR) -g $(INSTGRP) $(MONITOR_BIN) $(BIN)/$(MONITOR_BIN)
+ 
+ clean:
+diff --git a/capture_sdr_rtl433/Makefile.in b/capture_sdr_rtl433/Makefile.in
+index c2fff0f..6dc73c7 100644
+--- a/capture_sdr_rtl433/Makefile.in
++++ b/capture_sdr_rtl433/Makefile.in
+@@ -11,7 +11,7 @@ all:
+ 	$(PYTHON) ./setup.py bdist
+ 
+ install:
+-	$(PYTHON) ./setup.py install
++	$(PYTHON) ./setup.py install --prefix=$(prefix) --root=$(DESTDIR) --no-compile
+ 
+ clean:
+ 	@-$(PYTHON) ./setup.py clean
+diff --git a/capture_sdr_rtladsb/Makefile.in b/capture_sdr_rtladsb/Makefile.in
+index 60a3c63..c399f6b 100644
+--- a/capture_sdr_rtladsb/Makefile.in
++++ b/capture_sdr_rtladsb/Makefile.in
+@@ -11,7 +11,7 @@ all:
+ 	$(PYTHON) ./setup.py bdist
+ 
+ install:
+-	$(PYTHON) ./setup.py install
++	$(PYTHON) ./setup.py install --prefix=$(prefix) --root=$(DESTDIR) --no-compile
+ 	# These are now part of the setup.py install
+ 	# $(INSTALL) -o $(INSTUSR) -g $(INSTGRP) aircraft_db.csv $(ETC)/kismet_aircraft_db.csv
+ 	# $(INSTALL) -o $(INSTUSR) -g $(INSTGRP) $(MONITOR_BIN) $(BIN)/$(MONITOR_BIN)
+diff --git a/capture_sdr_rtlamr/Makefile.in b/capture_sdr_rtlamr/Makefile.in
+index a9b3918..625c8b5 100644
+--- a/capture_sdr_rtlamr/Makefile.in
++++ b/capture_sdr_rtlamr/Makefile.in
+@@ -10,7 +10,7 @@ all:
+ 	$(PYTHON) ./setup.py bdist
+ 
+ install:
+-	$(PYTHON) ./setup.py install
++	$(PYTHON) ./setup.py install --prefix=$(prefix) --root=$(DESTDIR) --no-compile
+ 
+ protobuf:
+ 	$(PROTOCBIN) -I ../protobuf_definitions --python_out=./KismetCaptureRtlamr ../protobuf_definitions/*.proto
+-- 
+2.7.4
+
