@@ -1,3 +1,4 @@
 #!/bin/bash
 
+export QT_QPA_FONTDIR=/usr/share/fonts/ttf
 cd /usr/share/fern-wifi-cracker/ && python3 execute.py "$@"
