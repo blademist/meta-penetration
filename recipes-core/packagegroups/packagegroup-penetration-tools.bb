@@ -10,12 +10,14 @@ PACKAGES = "\
     packagegroup-base-tools \
     packagegroup-net-tools \
     packagegroup-wireless-pentools \
+    packagegroup-security-tools \
     "
 
 RDEPENDS_packagegroup-penetration-tools = "\
     packagegroup-base-tools \
     packagegroup-net-tools \
     packagegroup-wireless-pentools \
+    packagegroup-security-tools \
     "
 
 SUMMARY_packagegroup-base-tools = "Base tools"
@@ -67,4 +69,9 @@ RDEPENDS_packagegroup-extra-packages = "\
     crda \
     linux-firmware \
     kernel-module-carl9170 \
+    "
+
+SUMMARY_packagegroup-security-tools = "Security tools"
+RDEPENDS_packagegroup-security-tools = "\
+    msfinstaller \
     "
