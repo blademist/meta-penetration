@@ -74,5 +74,4 @@ RDEPENDS_packagegroup-extra-packages = "\
 SUMMARY_packagegroup-security-tools = "Security tools"
 RDEPENDS_packagegroup-security-tools = "\
     msfinstaller \
-    exploitdb \
     "
