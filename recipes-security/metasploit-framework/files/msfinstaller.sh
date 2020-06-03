@@ -1,7 +1,7 @@
 #!/bin/bash
 
 msfname="metasploit-framework"
-msfver="5.0.90"
+msfver="5.0.91"
 msfpkg="${msfver}.tar.gz"
 msfurl="https://github.com/rapid7/metasploit-framework/archive/"
 
@@ -10,7 +10,7 @@ msfpath="${basepath}${msfname}"
 
 mycurl=`which curl`
 if [ ! -z ${mycurl} ]; then
-	download_cmd="${mycurl} -R -L -f --retry 3 --retry-delay 4 --connect-timeout 180 --compressed -C - -o"
+	download_cmd="${mycurl} -R -L -f -k --retry 3 --retry-delay 4 --connect-timeout 180 --compressed -C - -o"
 else
 	echo "Can not find curl command, please install it first."
 	exit 1
