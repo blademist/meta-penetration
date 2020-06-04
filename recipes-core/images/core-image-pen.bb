@@ -7,6 +7,7 @@ LICENSE = "MIT"
 inherit core-image
 
 IMAGE_INSTALL += "\
+    packagegroup-core-tools \
     packagegroup-penetration-tools \
     "
 

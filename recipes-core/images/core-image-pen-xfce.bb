@@ -9,6 +9,7 @@ IMAGE_INSTALL += "\
     packagegroup-core-x11 \
     packagegroup-xfce-base \
     kernel-modules \
+    packagegroup-core-tools \
     packagegroup-penetration-tools \
     packagegroup-extra-tools \
 "
