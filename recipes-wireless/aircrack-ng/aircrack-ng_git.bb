@@ -3,11 +3,11 @@ HOMEPAGE = "http://www.aircrack-ng.org/"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=014976fd8a05c5e5b5a38415d8383af1"
 
-SRC_URI = "http://dl.aircrack-ng.org/${BPN}-${PV}.tar.gz \
-          "
+SRC_URI = "git://github.com/aircrack-ng/aircrack-ng.git"
+SRCREV = "048e434b7d0f7f9084d0e0f7803e92dab426f6e3"
+PV = "1.6+git${SRCPV}"
 
-SRC_URI[md5sum] = "22ddc85549b51ed0da0931d01ef215e5"
-SRC_URI[sha256sum] = "4f0bfd486efc6ea7229f7fbc54340ff8b2094a0d73e9f617e0a39f878999a247"
+S = "${WORKDIR}/git"
 
 inherit autotools pkgconfig
 
