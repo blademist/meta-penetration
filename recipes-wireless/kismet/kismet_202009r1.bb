@@ -3,14 +3,12 @@ HOMEPAGE = "https://www.kismetwireless.net/"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=21d24e9d61cfe0fd83aebabd3788785c"
 
-SRC_URI = "https://www.kismetwireless.net/code/${BPN}-2020-03-R1.tar.xz \
-           file://0001-python-tools-Fix-installation-for-python-site-packag.patch \
-           "
+SRC_URI = "https://www.kismetwireless.net/code/${BPN}-2020-09-R1.tar.xz"
 
-SRC_URI[md5sum] = "863be883e2582ebae7ef17e9c8ddfd5e"
-SRC_URI[sha256sum] = "034db8a02b5bb93bfd3f22b855faa774a212f091b6a6824c7e33aa44744d3fd6"
+SRC_URI[md5sum] = "1872a725b4bf4328b7856fb97ca711fd"
+SRC_URI[sha256sum] = "3ad794c341e3aabdeea6d20b51bf35be913148704077532d177b66629aa39128"
 
-S = "${WORKDIR}/${BPN}-2020-03-R1"
+S = "${WORKDIR}/${BPN}-2020-09-R1"
 
 DEPENDS = "libnl libpcap libmicrohttpd sqlite3 protobuf protobuf-native protobuf-c protobuf-c-native libusb1"
 RDEPENDS_${PN} = "gpsd wireshark"
