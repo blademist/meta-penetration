@@ -1,7 +1,7 @@
 #!/bin/bash
 
 msfname="metasploit-framework"
-msfver="5.0.91"
+msfver="6.0.3"
 msfpkg="${msfver}.tar.gz"
 msfurl="https://github.com/rapid7/metasploit-framework/archive/"
 
