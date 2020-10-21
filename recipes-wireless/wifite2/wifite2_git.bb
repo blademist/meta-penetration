@@ -11,7 +11,7 @@ PV = "2.2.5+git${SRCPV}"
 
 inherit allarch
 
-S = "${WORKDIR}/git/"
+S = "${WORKDIR}/git"
 
 RDEPENDS_${PN} = "python3-core iw wireless-tools aircrack-ng cowpatty reaver"
 

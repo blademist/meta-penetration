@@ -11,12 +11,12 @@ PV = "2.0r89+git${SRCPV}"
 
 inherit allarch
 
-S = "${WORKDIR}/git/"
+S = "${WORKDIR}/git"
 
 RDEPENDS_${PN} = "python3-core iw wireless-tools aircrack-ng cowpatty reaver"
 
 do_install () {
     mkdir -p ${D}${bindir}
-    install -m 755 ${S}wifite.py ${D}${bindir}
+    install -m 755 ${S}/wifite.py ${D}${bindir}
 }
 
