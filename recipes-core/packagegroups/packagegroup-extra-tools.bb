@@ -10,12 +10,12 @@ PACKAGES = "\
     packagegroup-extra-netapps \
     "
 
-RDEPENDS_packagegroup-extra-tools = "\
+RDEPENDS:packagegroup-extra-tools = "\
     packagegroup-extra-netapps \
     "
 
 WEBBROWSER ?= "epiphany"
-SUMMARY_packagegroup-extra-netapps = "Extra network applications"
-RDEPENDS_packagegroup-extra-netapps = "\
+SUMMARY:packagegroup-extra-netapps = "Extra network applications"
+RDEPENDS:packagegroup-extra-netapps = "\
     ${WEBBROWSER} \
     "

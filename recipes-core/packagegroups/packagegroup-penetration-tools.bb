@@ -13,15 +13,15 @@ PACKAGES = "\
     packagegroup-security-tools \
     "
 
-RDEPENDS_packagegroup-penetration-tools = "\
+RDEPENDS:packagegroup-penetration-tools = "\
     packagegroup-base-tools \
     packagegroup-net-tools \
     packagegroup-wireless-pentools \
     packagegroup-security-tools \
     "
 
-SUMMARY_packagegroup-base-tools = "Base tools"
-RDEPENDS_packagegroup-base-tools = "\
+SUMMARY:packagegroup-base-tools = "Base tools"
+RDEPENDS:packagegroup-base-tools = "\
     bash \
     coreutils \
     diffutils \
@@ -42,8 +42,8 @@ RDEPENDS_packagegroup-base-tools = "\
     tree \
     "
 
-SUMMARY_packagegroup-net-tools = "Network tools"
-RDEPENDS_packagegroup-net-tools = "\
+SUMMARY:packagegroup-net-tools = "Network tools"
+RDEPENDS:packagegroup-net-tools = "\
     tcpdump \
     netcat \
     wireshark \
@@ -52,8 +52,8 @@ RDEPENDS_packagegroup-net-tools = "\
     macchanger \
     "
 
-SUMMARY_packagegroup-wireless-pentools = "Wireless penetration tools"
-RDEPENDS_packagegroup-wireless-pentools = "\
+SUMMARY:packagegroup-wireless-pentools = "Wireless penetration tools"
+RDEPENDS:packagegroup-wireless-pentools = "\
     aircrack-ng \
     pixiewps \
     reaver \
@@ -64,14 +64,14 @@ RDEPENDS_packagegroup-wireless-pentools = "\
     fern-wifi-cracker \
     "
 
-SUMMARY_packagegroup-extra-packages = "Extra packages"
-RDEPENDS_packagegroup-extra-packages = "\
+SUMMARY:packagegroup-extra-packages = "Extra packages"
+RDEPENDS:packagegroup-extra-packages = "\
     crda \
     linux-firmware \
     kernel-module-carl9170 \
     "
 
-SUMMARY_packagegroup-security-tools = "Security tools"
-RDEPENDS_packagegroup-security-tools = "\
+SUMMARY:packagegroup-security-tools = "Security tools"
+RDEPENDS:packagegroup-security-tools = "\
     msfinstaller \
     "

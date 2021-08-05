@@ -13,14 +13,14 @@ PACKAGES = "\
     packagegroup-core-tools-sys-services \
     "
 
-RDEPENDS_packagegroup-core-tools = "\
+RDEPENDS:packagegroup-core-tools = "\
     packagegroup-core-tools-utils \
     packagegroup-core-tools-extended \
     packagegroup-core-tools-dev-utils \
     packagegroup-core-tools-sys-services \
     "
 
-RDEPENDS_packagegroup-core-tools-utils = "\
+RDEPENDS:packagegroup-core-tools-utils = "\
     bash \
     acl \
     attr \
@@ -55,7 +55,7 @@ RDEPENDS_packagegroup-core-tools-utils = "\
     sudo \
     "
 
-RDEPENDS_packagegroup-core-tools-extended = "\
+RDEPENDS:packagegroup-core-tools-extended = "\
     iproute2 \
     iputils \
     iputils-ping \
@@ -66,14 +66,14 @@ RDEPENDS_packagegroup-core-tools-extended = "\
     ethtool \
     "
 
-RDEPENDS_packagegroup-core-tools-dev-utils = "\
+RDEPENDS:packagegroup-core-tools-dev-utils = "\
     diffutils \
     m4 \
     make \
     patch \
     "
 
-RDEPENDS_packagegroup-core-tools-sys-services = "\
+RDEPENDS:packagegroup-core-tools-sys-services = "\
     at \
     cronie \
     logrotate \

@@ -11,7 +11,7 @@ SRC_URI[sha256sum] = "3ad794c341e3aabdeea6d20b51bf35be913148704077532d177b66629a
 S = "${WORKDIR}/${BPN}-2020-09-R1"
 
 DEPENDS = "libnl libpcap libmicrohttpd sqlite3 protobuf protobuf-native protobuf-c protobuf-c-native libusb1"
-RDEPENDS_${PN} = "gpsd wireshark"
+RDEPENDS:${PN} = "gpsd wireshark"
 
 PACKAGECONFIG ??= "python-tools"
 PACKAGECONFIG[python-tools] = "--enable-python-tools,--disable-python-tools,python3-setuptools-native python3-protobuf-native python3-numpy-native python3-pyserial-native,python3-protobuf python3-numpy python3-pyserial"
@@ -22,7 +22,7 @@ inherit ${@bb.utils.contains('PACKAGECONFIG', 'python-tools', 'python3native', '
 EXTRA_OECONF = "--sysconfdir=${sysconfdir}/${BPN} \
                "
 
-do_install_append() {
+do_install:append() {
     if ${@bb.utils.contains('PACKAGECONFIG', 'python-tools', 'true', 'false', d)}; then
         sed -i -e '1s,#!.*python.*,#!${USRBINPATH}/env python3,' ${D}${bindir}/kismet_cap_freaklabs_zigbee
         sed -i -e '1s,#!.*python.*,#!${USRBINPATH}/env python3,' ${D}${bindir}/kismet_cap_sdr_rtl433
@@ -33,15 +33,15 @@ do_install_append() {
 
 PACKAGES =+ "${@bb.utils.contains('PACKAGECONFIG', 'python-tools', '${PN}-capfreaklabszigbee ${PN}-capsdrrtl433 ${PN}-capsdrrtladsb ${PN}-capsdrrtlamr', '', d)}"
 
-FILES_${PN}-capfreaklabszigbee = "${bindir}/kismet_cap_freaklabs_zigbee \
+FILES:${PN}-capfreaklabszigbee = "${bindir}/kismet_cap_freaklabs_zigbee \
                                   ${libdir}/python${PYTHON_BASEVERSION}/site-packages/KismetCaptureFreaklabsZigbee* \
                                  "
-FILES_${PN}-capsdrrtl433 = "${bindir}/kismet_cap_sdr_rtl433 \
+FILES:${PN}-capsdrrtl433 = "${bindir}/kismet_cap_sdr_rtl433 \
                             ${libdir}/python${PYTHON_BASEVERSION}/site-packages/KismetCaptureRtl433* \
                            "
-FILES_${PN}-capsdrrtladsb = "${bindir}/kismet_cap_sdr_rtladsb \
+FILES:${PN}-capsdrrtladsb = "${bindir}/kismet_cap_sdr_rtladsb \
                              ${libdir}/python${PYTHON_BASEVERSION}/site-packages/KismetCaptureRtladsb* \
                             "
-FILES_${PN}-capsdrrtlamr = "${bindir}/kismet_cap_sdr_rtlamr \
+FILES:${PN}-capsdrrtlamr = "${bindir}/kismet_cap_sdr_rtlamr \
                             ${libdir}/python${PYTHON_BASEVERSION}/site-packages/KismetCaptureRtlamr* \
                            "

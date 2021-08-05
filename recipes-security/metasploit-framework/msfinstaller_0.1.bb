@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 SRC_URI = "file://msfinstaller.sh \
            "
 
-RDEPENDS_${PN} = "packagegroup-core-buildessential \
+RDEPENDS:${PN} = "packagegroup-core-buildessential \
                   ruby ruby-dev \
                   libxml2 libxml2-dev \
                   libxslt libxslt-dev \
@@ -22,4 +22,4 @@ do_install() {
     install -m 0755 ${S}/msfinstaller.sh ${D}${bindir}/msfinstaller.sh
 }
 
-INSANE_SKIP_${PN} += "dev-deps"
+INSANE_SKIP:${PN} += "dev-deps"

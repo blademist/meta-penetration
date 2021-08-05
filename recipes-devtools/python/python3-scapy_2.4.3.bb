@@ -12,7 +12,7 @@ inherit pypi setuptools3
 SRC_URI[md5sum] = "469ae6f5615799a5de3f3b4eb217b18d"
 SRC_URI[sha256sum] = "e2f8d11f6a941c14a789ae8b236b27bd634681f1b29b5e893861e284d234f6b0"
 
-RDEPENDS_${PN} = "${PYTHON_PN}-compression ${PYTHON_PN}-netclient  ${PYTHON_PN}-netserver \
+RDEPENDS:${PN} = "${PYTHON_PN}-compression ${PYTHON_PN}-netclient  ${PYTHON_PN}-netserver \
                   ${PYTHON_PN}-pydoc ${PYTHON_PN}-pkgutil ${PYTHON_PN}-shell \
                   ${PYTHON_PN}-threading ${PYTHON_PN}-numbers ${PYTHON_PN}-pycrypto"
 

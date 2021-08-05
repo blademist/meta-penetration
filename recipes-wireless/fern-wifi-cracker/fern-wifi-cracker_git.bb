@@ -14,7 +14,7 @@ inherit allarch
 
 S = "${WORKDIR}/git/Fern-Wifi-Cracker"
 
-RDEPENDS_${PN} = "python3-core python3-pyqt5 python3-sqlite3 python3-json python3-netclient python3-scapy libicui18n xterm subversion macchanger aircrack-ng reaver bash"
+RDEPENDS:${PN} = "python3-core python3-pyqt5 python3-sqlite3 python3-json python3-netclient python3-scapy libicui18n xterm subversion macchanger aircrack-ng reaver bash"
 
 do_install () {
     mkdir -p ${D}${bindir}

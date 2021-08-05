@@ -10,7 +10,7 @@ PV = "1.6.6+git${SRCPV}"
 S = "${WORKDIR}/git/src"
 
 DEPENDS = "libpcap"
-RDEPENDS_${PN} = "pixiewps aircrack-ng"
+RDEPENDS:${PN} = "pixiewps aircrack-ng"
 
 inherit autotools-brokensep
 

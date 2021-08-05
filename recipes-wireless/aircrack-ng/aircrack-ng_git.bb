@@ -12,12 +12,12 @@ S = "${WORKDIR}/git"
 inherit autotools pkgconfig
 
 DEPENDS = "libnl openssl libpcap sqlite3 libpcre"
-RDEPENDS_${PN} = "bash coreutils procps ethtool iw"
+RDEPENDS:${PN} = "bash coreutils procps ethtool iw"
 
 PACKAGECONFIG ??= "hwloc"
 PACKAGECONFIG[hwloc] = "--enable-hwloc,--disable-hwloc,hwloc"
 
 FILES_SOLIBSDEV = ""
-FILES_${PN} += "${libdir}/libaircrack*.so"
+FILES:${PN} += "${libdir}/libaircrack*.so"
 
-INSANE_SKIP_${PN} = "dev-so"
+INSANE_SKIP:${PN} = "dev-so"
