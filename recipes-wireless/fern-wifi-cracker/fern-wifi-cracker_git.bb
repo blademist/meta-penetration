@@ -4,7 +4,7 @@ LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://core/wps.py;beginline=13;endline=26;md5=a0830c84aa087dd904e22395e93d16c2"
 
 SRCREV = "7434485a50936b63c32ffd72226ffcb55026522f"
-SRC_URI = "git://github.com/savio-code/fern-wifi-cracker.git \
+SRC_URI = "git://github.com/savio-code/fern-wifi-cracker.git;branch=master;protocol=https \
            file://fern-wifi-cracker \
            "
 

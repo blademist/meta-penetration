@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://wifite.py;beginline=15;endline=18;md5=b32b09db3ee302a
                     "
 
 SRCREV = "876289c3a4846461bca9978cc0880d09d5d1e469"
-SRC_URI = "git://github.com/derv82/wifite.git"
+SRC_URI = "git://github.com/derv82/wifite.git;branch=master;protocol=https"
 PV = "2.0r89+git${SRCPV}"
 
 inherit allarch
