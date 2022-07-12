@@ -32,7 +32,6 @@ RDEPENDS:packagegroup-core-tools-utils = "\
     file \
     findutils \
     gawk \
-    gmp \
     grep \
     less \
     makedevs \
