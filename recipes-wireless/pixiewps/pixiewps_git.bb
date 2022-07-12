@@ -1,6 +1,6 @@
 SUMMARY = "A tool for bruteforcing the WPS pin"
 HOMEPAGE = "https://github.com/wiire/pixiewps"
-LICENSE = "GPLv3"
+LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE.md;md5=dedcfd78ca4eab2efdf6a4c5be1ab762"
 
 SRCREV = "a6b3fa514c0c9a6ad5dc931040218451c64ce150"

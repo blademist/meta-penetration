@@ -1,6 +1,6 @@
 SUMMARY = "An automated wireless attack tool"
 HOMEPAGE = "https://github.com/derv82/wifite"
-LICENSE = "GPLv2"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://wifite.py;beginline=15;endline=18;md5=b32b09db3ee302aea4d7d6802ef0cd9e \
                     file://readme.md;beginline=67;endline=72;md5=00e631a7e00b5e631bdf4feef89fd909 \
                     "

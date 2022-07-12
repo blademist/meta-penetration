@@ -1,6 +1,6 @@
 SUMMARY = "A tool for attacking Wi-Fi Protected Setup (WPS) registrar PINs"
 HOMEPAGE = "https://github.com/t6x/reaver-wps-fork-t6x.git"
-LICENSE = "GPLv2"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://../docs/LICENSE;md5=b8c7f7d7654b933d1bebc68cbdea7c05"
 
 SRCREV = "2d6e537e609bad84996847ab5ea6b59bf4bc6773"

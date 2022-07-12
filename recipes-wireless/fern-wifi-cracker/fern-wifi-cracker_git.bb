@@ -1,6 +1,6 @@
 SUMMARY = "A wireless security auditing and attack software program written using the Python Programming Language and the Python Qt GUI library"
 HOMEPAGE = "https://github.com/savio-code/fern-wifi-cracker"
-LICENSE = "GPLv3"
+LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://core/wps.py;beginline=13;endline=26;md5=a0830c84aa087dd904e22395e93d16c2"
 
 SRCREV = "7434485a50936b63c32ffd72226ffcb55026522f"

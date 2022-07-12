@@ -1,6 +1,6 @@
 SUMMARY = "An 802.11 layer2 wireless network detector, sniffer, and intrusion detection system"
 HOMEPAGE = "https://www.kismetwireless.net/"
-LICENSE = "GPLv2"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=21d24e9d61cfe0fd83aebabd3788785c"
 
 SRC_URI = "https://www.kismetwireless.net/code/${BPN}-2020-09-R1.tar.xz"

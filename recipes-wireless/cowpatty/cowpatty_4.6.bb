@@ -1,6 +1,6 @@
 SUMMARY = "Implementation of an offline dictionary attack against WPA/WPA2 networks using PSK-based authentication"
 HOMEPAGE = "http://www.willhackforsushi.com/"
-LICENSE = "GPLv2"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=0636e73ff0215e8d672dc4c32c317bb3"
 
 SRC_URI = "http://www.willhackforsushi.com/code/${BPN}/${PV}/${BP}.tgz \
