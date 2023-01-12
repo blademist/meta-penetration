@@ -61,7 +61,6 @@ RDEPENDS:packagegroup-wireless-pentools = "\
     wifite2 \
     mdk3 \
     kismet \
-    fern-wifi-cracker \
     "
 
 SUMMARY:packagegroup-extra-packages = "Extra packages"
