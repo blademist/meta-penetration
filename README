@@ -19,11 +19,6 @@ This layer depends on:
 	branch: master
 	revision: HEAD
 
-	URI: git://github.com/meta-qt5/meta-qt5.git
-	layers: meta-qt5
-	branch: master
-	revision: HEAD
-
 	Beagleboneblack:
     1. Using meta-yocto-bsp:
 	URI: git://git.yoctoproject.org/meta-yocto
