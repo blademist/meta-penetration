@@ -4,7 +4,7 @@ LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://../docs/LICENSE;md5=b8c7f7d7654b933d1bebc68cbdea7c05"
 
 SRC_URI = "git://github.com/t6x/reaver-wps-fork-t6x.git;branch=master;protocol=https"
-SRCREV = "4091bf2b31bf9fa7f1cfc913982a525f787ef990"
+SRCREV = "bd0f38262224c1b88ba9f1f95cb5476a488d2295"
 PV = "1.6.6+git${SRCPV}"
 
 S = "${WORKDIR}/git/src"
