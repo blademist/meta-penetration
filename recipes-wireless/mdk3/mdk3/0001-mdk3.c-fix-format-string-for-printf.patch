@@ -8,6 +8,8 @@ mdk3.c:3904:9: error: format not a string literal and no format arguments [-Werr
     printf(use_beac);
            ^~~~~~~~
 
+Upstream-Status: Pending
+
 Signed-off-by: Zhao Yi <twilightog@gmail.com>
 ---
  mdk3.c | 82 +++++++++++++++++++++++++++++++++---------------------------------
