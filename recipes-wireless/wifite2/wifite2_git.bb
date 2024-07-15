@@ -7,7 +7,7 @@ SRCREV = "e190794149f488f9c4a2801962e5165b29e71b5e"
 SRC_URI = "git://github.com/derv82/wifite2.git;branch=master;protocol=https \
            file://wifite2 \
            "
-PV = "2.2.5+git${SRCPV}"
+PV = "2.2.5+git"
 
 inherit allarch
 

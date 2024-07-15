@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://LICENSE.md;md5=dedcfd78ca4eab2efdf6a4c5be1ab762"
 
 SRC_URI = "git://github.com/wiire/pixiewps.git;branch=master;protocol=https"
 SRCREV = "464326fbcc499ac92d4f04c3990a9cc9c5124e86"
-PV = "1.4.2+git${SRCPV}"
+PV = "1.4.2+git"
 
 S = "${WORKDIR}/git"
 

@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://bully.c;beginline=4;endline=17;md5=33e042a5271c3fcd15
 
 SRCREV = "3ab3bc830738f447dce112e8551e3ac8193bf521"
 SRC_URI = "git://github.com/aanarchyy/bully.git;branch=master;protocol=https"
-PV = "1.1+git${SRCPV}"
+PV = "1.1+git"
 
 S = "${WORKDIR}/git/src"
 

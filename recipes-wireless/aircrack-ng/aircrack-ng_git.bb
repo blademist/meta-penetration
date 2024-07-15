@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=014976fd8a05c5e5b5a38415d8383af1"
 SRC_URI = "git://github.com/aircrack-ng/aircrack-ng.git;branch=master;protocol=https \
           "
 SRCREV = "0c169597dd3154582c35cd3378edf78b021e7561"
-PV = "1.7+git${SRCPV}"
+PV = "1.7+git"
 
 S = "${WORKDIR}/git"
 
