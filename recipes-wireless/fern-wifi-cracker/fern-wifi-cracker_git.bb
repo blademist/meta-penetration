@@ -3,12 +3,12 @@ HOMEPAGE = "https://github.com/savio-code/fern-wifi-cracker"
 LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://core/wps.py;beginline=13;endline=26;md5=a0830c84aa087dd904e22395e93d16c2"
 
-SRCREV = "7434485a50936b63c32ffd72226ffcb55026522f"
+SRCREV = "0870567eba97b219a409b4447821546b3000d1f0"
 SRC_URI = "git://github.com/savio-code/fern-wifi-cracker.git;branch=master;protocol=https \
            file://fern-wifi-cracker \
            "
 
-PV = "2.9+git${SRCPV}"
+PV = "3.4+git${SRCPV}"
 
 inherit allarch
 
