@@ -1,0 +1,33 @@
+From 003cfaa67317cbf1ef3754cff0fd5be030f60551 Mon Sep 17 00:00:00 2001
+From: Zhao Yi <twilightog@gmail.com>
+Date: Mon, 15 Jul 2024 16:07:33 +0800
+Subject: [PATCH] Makefile: append to CFLAGS instead of re-assign
+
+Append to CFLAGS instead of re-assign, then the external CFLAGS from
+build environment can be passed.
+
+Upstream-Status: Inappropriate [oe specific]
+
+Signed-off-by: Zhao Yi <twilightog@gmail.com>
+---
+ Makefile | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index b532b85..4b0f75f 100644
+--- a/Makefile
++++ b/Makefile
+@@ -7,8 +7,8 @@
+ # <dragorn> i think thats all anyone does
+ # <dragorn> make is a twisted beast
+ ##################################
+-LDLIBS		= -lpcap
+-CFLAGS		= -pipe -Wall -DOPENSSL 
++LDLIBS		+= -lpcap
++CFLAGS		+= -pipe -Wall -DOPENSSL
+ CFLAGS		+= -O2
+ LDLIBS		+= -lcrypto
+ CFLAGS		+= -g3 -ggdb
+-- 
+2.25.1
+
