@@ -15,7 +15,8 @@ RDEPENDS:${PN} = "packagegroup-core-buildessential \
                   postgresql postgresql-client \
                  "
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/sources"
+UNPACKDIR = "${S}"
 
 do_install() {
     install -d ${D}${bindir}
