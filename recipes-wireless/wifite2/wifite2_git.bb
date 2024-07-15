@@ -18,7 +18,7 @@ RDEPENDS:${PN} = "python3-core iw wireless-tools aircrack-ng cowpatty reaver"
 do_install () {
     mkdir -p ${D}${bindir}
     mkdir -p ${D}${datadir}/${BPN}
-    install -m 755 ${WORKDIR}/wifite2 ${D}${bindir}
+    install -m 755 ${UNPACKDIR}/wifite2 ${D}${bindir}
     install -m 755 ${S}/Wifite.py ${D}${datadir}/${BPN}
     cp -rf --preserve=mode,links ${S}/wifite ${D}${datadir}/${BPN}
 }
