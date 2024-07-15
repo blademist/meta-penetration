@@ -5,6 +5,8 @@ Subject: [PATCH] Makefile: fix GNU_HASH QA error
 
 Add LDFLAGS variable to Makefile, make sure the extra linker flags can be passed.
 
+Upstream-Status: Inappropriate [oe specific]
+
 Signed-off-by: Zhao Yi <twilightog@gmail.com>
 ---
  Makefile | 10 +++++-----
